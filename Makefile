@@ -17,9 +17,9 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ##
 
-templates := $(wildcard *.jinja2)
+templates := $(wildcard src/*.jinja2)
 
-all: $(templates:%.jinja2=../html/%.html)
+all: $(templates:src/%.jinja2=html/%.html)
 
-../html/%.html: %.jinja2
+html/%.html: src/%.jinja2
 	python3 generate_html_from_template.py $^ $@
