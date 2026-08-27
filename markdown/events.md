@@ -1,11 +1,15 @@
 # Events
 
 You have found the web site of the John Templeton Foundation-funded project:
-_Open Quantum Systems and the Causal Structure of Reality_. These pages are currently under construction. Please check back later for updates.  
+<em>Open Quantum Systems and the Causal Structure of Reality</em>.  
 
 &nbsp;  
 
-Note that the following text is meaningless gibberish that is being used to illustrate how the text on this page is being formatted into columns.
+These pages are currently under construction. Please check back later for updates.  
+
+&nbsp;  
+
+The following text is meaningless gibberish that is being used to illustrate how the text on this page is being rendered into columns.
 
 ----
 

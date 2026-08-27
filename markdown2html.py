@@ -53,39 +53,29 @@ def main():
         cutoff_index += 1
 
     if cutoff_index > 500:
-        column1 = markdown(body[:cutoff_index])
-        column2 = markdown(body[cutoff_index:])
-        contents = (
-            f"""
-            <div class="container text-center">
-              <h1>{header}</h1>
-              <hr/>
-              <div class="row align-items-start" style="margin-bottom: 60px">
-                <div class="col-sm-6">
-                  {column1}
-                </div>
-                <div class="col-sm-6">
-                  {column2}
-                </div>
-              </div>
-            </div>"""
-        ).lstrip()
+        columns = f"""
+        <div class="col-sm-6">
+            {markdown(body[:cutoff_index])}
+        </div>
+        <div class="col-sm-6">
+            {markdown(body[cutoff_index:])}
+        </div>""".lstrip()
     else:
-        column = markdown(body)
-        contents = (
-            f"""
-            <div class="container text-center">
-              <h1>{header}</h1>
-              <hr/>
-                <div class="row align-items-start" style="margin-bottom: 60px">
-                <div class="col-sm-3">&nbsp;</div>
-                <div class="col-sm-6">
-                  {column}
-                </div>
-                <div class="col-sm-3">&nbsp;</div>
-              </div>
-            </div>"""
-        ).lstrip()
+        columns = f"""
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-6">
+            {markdown(body)}
+        </div>
+        <div class="col-sm-3">&nbsp;</div>""".lstrip()
+
+    contents = f"""
+    <div class="container text-center">
+        <h1>{header}</h1>
+        <hr/>
+        <div class="row align-items-start" style="margin-bottom: 60px">
+            {columns}
+        </div>
+    </div>""".lstrip()
 
     with open(args.OUTPUT, "w") as op:
         print(contents, file=op)
