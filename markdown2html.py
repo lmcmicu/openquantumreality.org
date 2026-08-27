@@ -52,7 +52,7 @@ def main():
     while cutoff_index < len(body) and not is_space.fullmatch(body[cutoff_index]):
         cutoff_index += 1
 
-    if cutoff_index > 250:
+    if cutoff_index > 500:
         column1 = markdown(body[:cutoff_index])
         column2 = markdown(body[cutoff_index:])
         contents = (
@@ -77,11 +77,12 @@ def main():
             <div class="container text-center">
               <h1>{header}</h1>
               <hr/>
-              <div class="row align-items-start" style="margin-bottom: 60px">
+                <div class="row align-items-start" style="margin-bottom: 60px">
+                <div class="col-sm-3">&nbsp;</div>
                 <div class="col-sm-6">
                   {column}
                 </div>
-                <div class="col-sm-6">&nbsp;</div>
+                <div class="col-sm-3">&nbsp;</div>
               </div>
             </div>"""
         ).lstrip()
