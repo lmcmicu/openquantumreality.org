@@ -4,7 +4,7 @@ Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/ma
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory.
 
-2. [Commit](https://git-scm.com/docs/git-commit) your changes and [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) in GitHub. If you need to link any images or other resources (PDF files, videos, etc.), send these by email to the web server administrator
+2. [Commit](https://docs.github.com/en/pull-requests/reference/commits) (see also the [command line interface](https://git-scm.com/docs/git-commit)) your changes and [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) in GitHub. If you need to link any images or other resources (PDF files, videos, etc.), send these by email to the web server administrator
 
 On the web server (only for the web site admin):
 
