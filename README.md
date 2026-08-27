@@ -10,10 +10,10 @@ On the web server:
 
 3. Add any images or other required resources (PDF files, etc.) to the `html/resources/` directory.
 
-4. Update the source code using `git pull` and recompile it using `make`:
+4. Navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`):
 
-        (mike@sudarshan ~)$ cd www
-        (mike@sudarshan <main> www)$ git pull
+        <b>(mike@sudarshan ~)$ cd www</b>
+        <b>(mike@sudarshan <main> www)$ git pull</b>
         remote: Enumerating objects: 5, done.
         remote: Counting objects: 100% (5/5), done.
         remote: Compressing objects: 100% (1/1), done.
@@ -25,7 +25,7 @@ On the web server:
 		Fast-forward
 		 markdown2html.py | 4 ++--
 		 1 file changed, 2 insertions(+), 2 deletions(-)
-		(mike@sudarshan <main> www)$ make -B
+		<b>(mike@sudarshan <main> www)$ make -B</b>
 		python3 markdown2html.py markdown/events.md src/events-from-markdown.html
 		python3 markdown2html.py markdown/index.md src/index-from-markdown.html
 		python3 markdown2html.py markdown/join.md src/join-from-markdown.html
