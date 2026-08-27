@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+
+##
+# openquantumreality.org - web site for the John Templeton Foundation-funded
+# project, Open Quantum Systems and the Causal Structure of Reality,
+# Copyright (C) 2026 Michael E. Cuffaro.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+##
+
+from markdown import markdown
+
+import argparse
+import re
+import sys
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description='Generate an output HTML file from a Jinja2 template'
+    )
+    parser.add_argument('INPUT', type=str, help='the input Jinja2 template file')
+    parser.add_argument('OUTPUT', type=str, help='the output HTML file')
+    args = parser.parse_args()
+
+    with open(args.INPUT) as ip:
+        lines = ip.readlines()
+        header = ""
+        body = ""
+        for line in lines:
+            if line.strip():
+                if line.startswith("#"):
+                    if header or not line.startswith("# "):
+                        print("Invalid input. Only one level-1 header is allowed.", file=sys.stderr)
+                    header = line.strip().removeprefix('# ')
+                else:
+                    body += line
+
+    is_space = re.compile(r"\s")
+    cutoff_index = round(len(body) / 2)
+    while cutoff_index < len(body) and not is_space.fullmatch(body[cutoff_index]):
+        cutoff_index += 1
+
+    if cutoff_index > 250:
+        column1 = markdown(body[:cutoff_index])
+        column2 = markdown(body[cutoff_index:])
+        contents = (
+            f"""
+            <div class="container text-center">
+              <h1>{header}</h1>
+              <hr/>
+              <div class="row align-items-start" style="margin-bottom: 60px">
+                <div class="col-sm-6">
+                  {column1}
+                </div>
+                <div class="col-sm-6">
+                  {column2}
+                </div>
+              </div>
+            </div>"""
+        ).lstrip()
+    else:
+        column = markdown(body)
+        contents = (
+            f"""
+            <div class="container text-center">
+              <h1>{header}</h1>
+              <hr/>
+              <div class="row align-items-start" style="margin-bottom: 60px">
+                <div class="col-sm-6">
+                  {column}
+                </div>
+                <div class="col-sm-6">&nbsp;</div>
+              </div>
+            </div>"""
+        ).lstrip()
+
+    with open(args.OUTPUT, "w") as op:
+        print(contents, file=op)
+
+
+if __name__ == "__main__":
+    main()

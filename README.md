@@ -13,4 +13,4 @@
 4. Compile the source code:
 
         $ make
-        python3 generate_html_from_template.py index.jinja2 ../html/index.html
+        python3 jinja2html.py index.jinja2 ../html/index.html
