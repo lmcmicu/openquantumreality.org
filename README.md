@@ -12,7 +12,7 @@
 
 1. Add any images or other required resources (PDF files, videos, etc.) to the `html/resources/` directory.
 
-2. Navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`):
+2. Navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like:
 <pre>
 <b>(mike@sudarshan ~)$ cd www</b>
 <b>(mike@sudarshan <main> www)$ git pull</b>
@@ -42,4 +42,6 @@ python3 jinja2html.py src/research.jinja2 html/research.html
 python3 jinja2html.py src/team.jinja2 html/team.html
 </pre>
 
-3. Check the output in the `html/` directory and adjust the edited `.md` file as necessary.
+3. If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
+
+4. If the code compiles without errors, check each generated file in the `html/` directory and if there are any further problems, adjust the `.md` file accordingly until compilation gives the desired output. If you are in a hurry, as a temporary hack, you may alternately edit the file generated in the `html/` directly, but if you do that then you will have to redo it every time you recompile, so doing this is best avoided.
