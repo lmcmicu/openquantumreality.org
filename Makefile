@@ -17,9 +17,13 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ##
 
-templates := $(wildcard src/*.jinja2)
+jinja2templates := $(wildcard src/*.jinja2)
+markdown_files := $(wildcard markdown/*.md)
 
-all: $(templates:src/%.jinja2=html/%.html)
+all: $(jinja2templates:src/%.jinja2=html/%.html)
 
-html/%.html: src/%.jinja2
-	python3 jinja2html.py $^ $@
+html/%.html: src/%.jinja2 $(markdown_files:markdown/%.md=src/%-from-markdown.html)
+	python3 jinja2html.py $< $@
+
+src/%-from-markdown.html: markdown/%.md
+	python3 markdown2html.py $< $@
