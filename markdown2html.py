@@ -28,9 +28,9 @@ import sys
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Generate an output HTML file from a Jinja2 template'
+        description='Generate an output HTML file from a markdown file'
     )
-    parser.add_argument('INPUT', type=str, help='the input Jinja2 template file')
+    parser.add_argument('INPUT', type=str, help='the input markdown file')
     parser.add_argument('OUTPUT', type=str, help='the output HTML file')
     args = parser.parse_args()
 
