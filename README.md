@@ -4,11 +4,11 @@ Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/ma
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory.
 
-2. Commit your changes and open a pull request in GitHub. If you need to link any images or other resources (PDF files, etc.), send these to whoever has access to the web server. 
+2. [Commit](https://git-scm.com/docs/git-commit) your changes and [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) in GitHub. If you need to link any images or other resources (PDF files, videos, etc.), send these by email to the web server administrator
 
-On the web server:
+On the web server (only for the web site admin):
 
-3. Add any images or other required resources (PDF files, etc.) to the `html/resources/` directory.
+3. Add any images or other required resources (PDF files, videos, etc.) to the `html/resources/` directory.
 
 4. Navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`):
 <pre>
@@ -39,3 +39,5 @@ python3 jinja2html.py src/news.jinja2 html/news.html
 python3 jinja2html.py src/research.jinja2 html/research.html
 python3 jinja2html.py src/team.jinja2 html/team.html
 </pre>
+
+5. Check the output in the `html/` directory and adjust the edited `.md` file as necessary.
