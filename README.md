@@ -1,5 +1,7 @@
 # Updating web pages
 
+Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) or offline:
+
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory.
 
 2. Commit your changes and open a pull request in GitHub. If you need to link any images or other resources (PDF files, etc.), send these to whoever has access to the web server. 
