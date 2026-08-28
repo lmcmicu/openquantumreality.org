@@ -14,7 +14,7 @@
 3. If you need to link to an image or some other web content (a PDF file, audio / video file, etc.), send these by email to the web server administrator. **Avoid adding binary files to this repository.**
 
 > [!NOTE]
-> This is a public repository. Do not upload any sensitive data. Also avoid uploading binaries or large files.
+> This is a public repository. Do not upload sensitive data. Also avoid uploading binaries or large files.
 
 ## Deploying to the server (for the web server administrator only)
 
