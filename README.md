@@ -46,6 +46,6 @@ python3 jinja2html.py src/research.jinja2 html/research.html
 python3 jinja2html.py src/team.jinja2 html/team.html
 </pre>
 
-3. Ideally, _you will have already tried recompiling the code on your own laptop and verified that you can do so without error before making any changes whatsoever to the server_. If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
+3. Ideally, **you will have already tried recompiling the code on your own laptop and verified that you can do so without error before making any changes whatsoever to the server**. If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
 
 4. If the code compiles without errors, check each generated file in the `html/` directory and if there are any further problems (formatting issues, etc.), adjust the `.md` file accordingly until compilation gives the desired output.
