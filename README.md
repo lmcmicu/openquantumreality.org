@@ -4,7 +4,7 @@
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory.
 
-2. **If you are editing offline**, [commit](https://git-scm.com/docs/git-commit) your changes to a new branch and then [push](https://git-scm.com/docs/git-push) your branch to GitHub. You will then need to [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) to merge your branch to the [main branch](https://github.com/lmcmicu/openquantumreality.org/tree/main). **If you are [using GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)** all of this should be taken care of automatically (but you will be asked to confirm each step).
+2. **If you are editing offline**, [commit](https://git-scm.com/docs/git-commit) your changes to a new branch and then [push](https://git-scm.com/docs/git-push) your branch to GitHub. You will then need to [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) to merge your branch to the main branch. **If you are [using GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)** all of this should be taken care of automatically (but you will be asked to confirm each step).
 
 3. If you need to link to an image or some other web content (a PDF file, audio / video file, etc.), send these by email to the web server administrator
 
