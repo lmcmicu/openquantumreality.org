@@ -10,6 +10,8 @@
 
 **On the web server (only for the web site admin):**
 
+*Before making any changes to the server*, you should dry run the following steps on a dev branch on your own workstation to be certain that that the files in the `html/` directory are being generated correctly. The below steps assume that this has been done and that the changes have been merged to the main branch.
+
 1. Add any images or other required resources (PDF files, videos, etc.) to the `html/resources/` directory.
 
 2. Navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like:
@@ -42,6 +44,6 @@ python3 jinja2html.py src/research.jinja2 html/research.html
 python3 jinja2html.py src/team.jinja2 html/team.html
 </pre>
 
-3. If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
+3. Ideally, you will have already tried recompiling the code on your own laptop and verified that you can do so without error before making any changes to the server. If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
 
-4. If the code compiles without errors, check each generated file in the `html/` directory and if there are any further problems, adjust the `.md` file accordingly until compilation gives the desired output. If you are in a hurry, as a temporary hack, you may alternately edit the file generated in the `html/` directly, but if you do that then you will have to redo it every time you recompile, so doing this is best avoided.
+4. If the code compiles without errors, check each generated file in the `html/` directory and if there are any further problems, adjust the `.md` file accordingly until compilation gives the desired output.
