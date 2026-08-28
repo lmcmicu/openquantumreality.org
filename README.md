@@ -8,7 +8,7 @@
 
 3. If you need to link to an image or some other web content (a PDF file, audio / video file, etc.), send these by email to the web server administrator
 
-**On the web server (only for the web site admin):**
+**On the web server (only for the web server administrator):**
 
 > [!CAUTION]
 > Before making any changes to the server,
