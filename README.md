@@ -46,7 +46,7 @@ python3 jinja2html.py src/research.jinja2 html/research.html
 python3 jinja2html.py src/team.jinja2 html/team.html
 </pre>
 
-Test: - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+Test: - ![#f03c15](test)
 
 3. Ideally, ![#ce2029](you will have already tried recompiling the code on your own laptop and verified that you can do so without error before making any changes whatsoever to the server). If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
 
