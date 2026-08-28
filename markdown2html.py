@@ -52,7 +52,7 @@ def main():
     while cutoff_index < len(body) and not is_space.fullmatch(body[cutoff_index]):
         cutoff_index += 1
 
-    if cutoff_index > 500:
+    if cutoff_index > 250:
         columns = f"""
         <div class="col-sm-6">
             {markdown(body[:cutoff_index])}
