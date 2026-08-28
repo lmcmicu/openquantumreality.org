@@ -48,11 +48,12 @@ def main():
                     body += line
 
     is_space = re.compile(r"\s")
-    cutoff_index = round(len(body) / 2)
-    while cutoff_index < len(body) and not is_space.fullmatch(body[cutoff_index]):
+    body_len = len(body)
+    cutoff_index = round(body_len / 2)
+    while cutoff_index < body_len and not is_space.fullmatch(body[cutoff_index]):
         cutoff_index += 1
 
-    if cutoff_index > 250:
+    if body_len > 500:
         columns = f"""
         <div class="col-sm-6">
             {markdown(body[:cutoff_index])}
