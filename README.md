@@ -10,7 +10,9 @@
 
 **On the web server (only for the web site admin):**
 
-*Before making any changes to the server*, you should dry run the following steps on a dev branch on your own workstation to be certain that that the files in the `html/` directory are being generated correctly. The below steps assume that this has been done and that the changes [have been merged](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request) to the main branch.
+> [!CAUTION]
+> Before making any changes to the server,
+you should dry run the following steps on a dev branch on your own workstation to be certain that that the files in the `html/` directory are being generated correctly. The below steps assume that this has been done and that the changes [have been merged](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request) to the main branch.
 
 1. Add any images or other required resources (PDF files, videos, etc.) to the `html/resources/` directory.
 
