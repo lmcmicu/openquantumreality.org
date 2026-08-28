@@ -1,13 +1,13 @@
 # Updating web pages
 
-**Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) or offline:**
+**Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) or offline:**
 
 > [!NOTE]
 > If using GitHub, follow the directions for editing files in [your own repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository). Note that you will have to create a new branch and pull request when editing a file, which will then need to be approved by the web server adminstrator before committing to main and deploying to the server (direct commits to main are not permitted). There is no need to fork the repository.
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory using [markdown syntax](https://daringfireball.net/projects/markdown/syntax).
 
-2. **If you are editing offline**, [commit](https://git-scm.com/docs/git-commit) your changes to a new branch and then [push](https://git-scm.com/docs/git-push) your branch to GitHub. You will then need to [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) to merge your branch to the main branch. **If you are [using GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files)** all of this should be taken care of automatically (but you will be asked to confirm each step).
+2. **If you are editing offline**, [commit](https://git-scm.com/docs/git-commit) your changes to a new branch and then [push](https://git-scm.com/docs/git-push) your branch to GitHub. You will then need to [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) to merge your branch to the main branch. **If you are [using GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository)** all of this should be taken care of automatically (but you will be asked to confirm each step).
 
 3. If you need to link to an image or some other web content (a PDF file, audio / video file, etc.), send these by email to the web server administrator
 
