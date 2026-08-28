@@ -1,6 +1,6 @@
 # Updating web pages
 
-## 1 Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) or offline
+**Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) or offline:**
 
 > [!NOTE]
 > If using GitHub, follow the directions for editing files in [your own repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository). Note that you will have to create a new branch and pull request when editing a file, which will then need to be approved by the web server adminstrator before committing to main and deploying to the server (direct commits to main are not permitted). There is no need to fork this repository.
@@ -11,7 +11,7 @@
 
 3. If you need to link to an image or some other web content (a PDF file, audio / video file, etc.), send these by email to the web server administrator
 
-## On the web server (only for the web server administrator):
+**On the web server (only for the web server administrator):**
 
 > [!CAUTION]
 > Before making any changes to the server,
