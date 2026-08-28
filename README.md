@@ -16,7 +16,7 @@ you should dry run the following steps on a development branch (you can use the 
 
 1. Transfer any images or other required resources (PDF files, videos, etc.) to the `html/resources/` directory on the web server.
 
-2. On the server, navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like:
+2. On the server, navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look (something) like:
 <pre>
 <b>(mike@sudarshan ~)$ cd www</b>
 <b>(mike@sudarshan <main> www)$ git pull</b>
