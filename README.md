@@ -14,9 +14,9 @@
 > Before making any changes to the server,
 you should dry run the following steps on a development branch (you can use the branch associated with the [pull request](https://docs.github.com/en/pull-requests/reference/pull-requests) corresponding to the change) on your own workstation to be certain that that the files in the `html/` directory are being generated correctly. The below steps assume that this has been done and that the changes [have been merged](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request) to the main branch.
 
-1. Add any images or other required resources (PDF files, videos, etc.) to the `html/resources/` directory.
+1. Transfer any images or other required resources (PDF files, videos, etc.) to the `html/resources/` directory on the web server.
 
-2. Navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like:
+2. On the server, navigate to the `www/` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like:
 <pre>
 <b>(mike@sudarshan ~)$ cd www</b>
 <b>(mike@sudarshan <main> www)$ git pull</b>
@@ -46,6 +46,6 @@ python3 jinja2html.py src/research.jinja2 html/research.html
 python3 jinja2html.py src/team.jinja2 html/team.html
 </pre>
 
-3. Ideally, you will have already tried recompiling the code on your own laptop and verified that you can do so without error before making any changes to the server. If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
+3. Ideally, you will have already tried recompiling the code on your own laptop and verified that you can do so without error before making any changes whatsoever to the server. If there are errors, adjust the `.md` file as necessary. Note that the paths to linked images or other resources need to be adjusted so that `resource.ext` becomes `resources/resource.ext`.
 
-4. If the code compiles without errors, check each generated file in the `html/` directory and if there are any further problems, adjust the `.md` file accordingly until compilation gives the desired output.
+4. If the code compiles without errors, check each generated file in the `html/` directory and if there are any further problems (formatting issues, etc.), adjust the `.md` file accordingly until compilation gives the desired output.
