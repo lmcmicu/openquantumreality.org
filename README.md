@@ -3,7 +3,7 @@
 **Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files) or offline:**
 
 > [!NOTE]
-> Follow the directions for editing files in [your own repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) to create a new branch and pull request when editing a file. There is no need to fork the repository.
+> If using GitHub, follow the directions for editing files in [your own repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) to create a new branch and pull request when editing a file. There is no need to fork the repository.
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory using [markdown syntax](https://daringfireball.net/projects/markdown/syntax).
 
