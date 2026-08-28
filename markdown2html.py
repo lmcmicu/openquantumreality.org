@@ -55,16 +55,16 @@ def main():
 
     if body_len > 500:
         columns = f"""
-        <div class="col-sm-6">
+        <div class="col-sm-6" style="text-align: left;">
             {markdown(body[:cutoff_index])}
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" style="text-align: left;">
             {markdown(body[cutoff_index:])}
         </div>""".lstrip()
     else:
         columns = f"""
         <div class="col-sm-3">&nbsp;</div>
-        <div class="col-sm-6">
+        <div class="col-sm-6" style="text-align: left;">
             {markdown(body)}
         </div>
         <div class="col-sm-3">&nbsp;</div>""".lstrip()
