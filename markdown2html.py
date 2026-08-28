@@ -64,7 +64,7 @@ def main():
     else:
         columns = f"""
         <div class="col-sm-3">&nbsp;</div>
-        <div class="col-sm-6" style="text-align: left;">
+        <div class="col-sm-6">
             {markdown(body)}
         </div>
         <div class="col-sm-3">&nbsp;</div>""".lstrip()
