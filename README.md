@@ -1,5 +1,7 @@
 # Updating web pages
 
+## Editing content
+
 **Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) or offline:**
 
 > [!NOTE]
@@ -11,7 +13,7 @@
 
 3. If you need to link to an image or some other web content (a PDF file, audio / video file, etc.), send these by email to the web server administrator
 
-**On the web server (only for the web server administrator):**
+## Deploying to the server (for the web server administrator only)
 
 > [!CAUTION]
 > Before making any changes to the server,
