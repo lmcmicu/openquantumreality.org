@@ -22,8 +22,8 @@
 from markdown import markdown
 
 import argparse
+import os.path
 import re
-import sys
 
 
 def main():
@@ -40,13 +40,18 @@ def main():
         body = ""
         for line in lines:
             if line.strip():
-                if line.startswith("#"):
-                    if header or not line.startswith("# "):
-                        print("Invalid input. Only one level-1 header is allowed.", file=sys.stderr)
+                if not header and line.startswith("# "):
                     header = line.strip().removeprefix('# ')
                 else:
                     body += line
 
+    if not header:
+        # If the header can't be read, use the filename:
+        header = ''.join(args.INPUT.rsplit('.', 1)[:-1])
+        header = os.path.basename(header).replace('_', ' ').capitalize()
+
+    # TODO: Use some kind of hiccup library to more easily parse the markdown (or maybe just use
+    # the markdown library).
     is_space = re.compile(r"\s")
     body_len = len(body)
     cutoff_index = round(body_len / 2)
