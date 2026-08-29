@@ -50,8 +50,8 @@ def main():
         header = ''.join(args.INPUT.rsplit('.', 1)[:-1])
         header = os.path.basename(header).replace('_', ' ').capitalize()
 
-    # TODO: Use some kind of hiccup library to more easily parse the markdown (or maybe just use
-    # the markdown library).
+    # TODO: Use hiccupy or python-hiccup instead of markdown() to parse
+    # the file into html and add style elements.
     is_space = re.compile(r"\s")
     body_len = len(body)
     cutoff_index = round(body_len / 2)
