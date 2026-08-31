@@ -50,9 +50,15 @@ def main():
         header = ''.join(args.INPUT.rsplit('.', 1)[:-1])
         header = os.path.basename(header).replace('_', ' ').capitalize()
 
-    # TODO: Use hiccupy or python-hiccup instead of markdown() to parse
-    # the file into html and add style elements.
-    markdown = Markdown()
+    markdown_parser = Markdown()
+    is_p_start = re.compile(r"<\s*[pP]\s*>")
+    is_p_end = re.compile(r"<\s*/p\s*>")
+
+    def convert(markdown):
+        html = markdown_parser.convert(markdown)
+        html = is_p_start.sub('<p>', html)
+        html = is_p_end.sub("</p>", html)
+        return html
 
     is_space = re.compile(r"\s")
     body_len = len(body)
@@ -63,16 +69,16 @@ def main():
     if body_len > 500:
         columns = f"""
         <div class="col-sm-6" style="text-align: left;">
-            {markdown.convert(body[:cutoff_index])}
+            {convert(body[:cutoff_index])}
         </div>
         <div class="col-sm-6" style="text-align: left;">
-            {markdown.convert(body[cutoff_index:])}
+            {convert(body[cutoff_index:])}
         </div>""".lstrip()
     else:
         columns = f"""
         <div class="col-sm-3">&nbsp;</div>
         <div class="col-sm-6">
-            {markdown.convert(body)}
+            {convert(body)}
         </div>
         <div class="col-sm-3">&nbsp;</div>""".lstrip()
 
