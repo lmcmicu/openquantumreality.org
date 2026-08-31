@@ -62,13 +62,34 @@ def main():
         html = is_br.sub('<span style="height: 12px; display: block;"></span>', html)
         return html
 
-    is_space = re.compile(r"\s")
-    body_len = len(body)
-    cutoff_index = round(body_len / 2)
-    while cutoff_index < body_len and not is_space.fullmatch(body[cutoff_index]):
-        cutoff_index += 1
+    def get_middle_newline_index(body):
+        body_len = len(body)
+        index = round(body_len / 2)
+        while index < body_len and body[index] != "\n":
+            index += 1
+        return index
 
-    if body_len > 500:
+    def get_prev_newline_index(body, this_newline_index):
+        prev_newline_index = this_newline_index - 1
+        while prev_newline_index > 0 and body[prev_newline_index] != "\n":
+            prev_newline_index -= 1
+        return prev_newline_index
+
+    def get_next_newline_index(body, this_newline_index):
+        next_newline_index = this_newline_index + 1
+        while next_newline_index < len(body) and body[next_newline_index] != "\n":
+            next_newline_index += 1
+        return next_newline_index
+
+    if len(body) > 500:
+        # Note that this isn't perfect. You must manually inspect the beginnings and endings
+        # of each generated column in the .html file to make sure that the split didn't
+        # occur at a spot that would invalidate a html tag or markdown ref, for instance.
+        # If there is a problem, then the fix should be as easy as adding a few newlines to the
+        # .md file at around the cutoff point to force it to cutoff somewhere different. This
+        # should work since whitespace is counted when determining the initial guess for the mid
+        # point.
+        cutoff_index = get_middle_newline_index(body)
         columns = f"""
         <div class="col-sm-6" style="text-align: left;">
             {convert(body[:cutoff_index])}

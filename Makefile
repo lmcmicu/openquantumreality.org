@@ -30,7 +30,7 @@ template_files := $(wildcard templates/*.md)
 html_files := $(wildcard html/*.md)
 html_testfiles := $(wildcard test/html/*.html)
 
-.PHONY: all reinit test_setup test clean
+.PHONY: all reinit test_setup build_test test test clean
 
 all: $(jinja2_files:src/%.jinja2=html/%.html)
 
@@ -44,13 +44,14 @@ html/%.html: src/%.jinja2 $(markdown_files:markdown/%.md=src/%-from-markdown.htm
 src/%-from-markdown.html: markdown/%.md
 	python3 markdown2html.py $< $@
 
-test_setup: | test/html test/src
-
-test: $(jinja2_testfiles:test/src/%.jinja2=test/html/%.html)
-	for htmlfile in $(notdir $(html_testfiles)); \
+test: build_test | test/html test/src
+	@for htmlfile in $(notdir $(html_testfiles)); \
 	do \
-		diff --strip-trailing-cr -Z -q test/html/$$htmlfile templates_html/$$htmlfile; \
+		diff --strip-trailing-cr -Z -s -q test/html/$$htmlfile templates_html/$$htmlfile ; \
 	done
+
+build_test: $(jinja2_testfiles:test/src/%.jinja2=test/html/%.html)
+	@echo "Test files copied. Please run ~make test~ again (yes I know this is the second time)."
 
 test/html:
 	mkdir -p $@
@@ -58,6 +59,7 @@ test/html:
 test/src:
 	mkdir -p $@
 	cp -f src/*.jinja2 src/bootstrap* src/navbar-fragment.html src/page-footer.html $@
+	@echo "Test directory created. Please run ~make test~ again."
 
 test/html/%.html: test/src/%.jinja2 $(template_files:templates/%.md=test/src/%-from-markdown.html)
 	python3 jinja2html.py $< $@
