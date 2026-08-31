@@ -99,11 +99,11 @@ def main():
         </div>""".lstrip()
     else:
         columns = f"""
-        <div class="col-sm-3">&nbsp;</div>
-        <div class="col-sm-6">
+        <div class="col-sm-2">&nbsp;</div>
+        <div class="col-sm-8">
             {convert(body)}
         </div>
-        <div class="col-sm-3">&nbsp;</div>""".lstrip()
+        <div class="col-sm-2">&nbsp;</div>""".lstrip()
 
     contents = f"""
     <div class="container text-center">
