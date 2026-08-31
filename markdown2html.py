@@ -19,7 +19,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ##
 
-from markdown import markdown
+from markdown import Markdown
 
 import argparse
 import os.path
@@ -52,6 +52,8 @@ def main():
 
     # TODO: Use hiccupy or python-hiccup instead of markdown() to parse
     # the file into html and add style elements.
+    markdown = Markdown()
+
     is_space = re.compile(r"\s")
     body_len = len(body)
     cutoff_index = round(body_len / 2)
@@ -61,16 +63,16 @@ def main():
     if body_len > 500:
         columns = f"""
         <div class="col-sm-6" style="text-align: left;">
-            {markdown(body[:cutoff_index])}
+            {markdown.convert(body[:cutoff_index])}
         </div>
         <div class="col-sm-6" style="text-align: left;">
-            {markdown(body[cutoff_index:])}
+            {markdown.convert(body[cutoff_index:])}
         </div>""".lstrip()
     else:
         columns = f"""
         <div class="col-sm-3">&nbsp;</div>
         <div class="col-sm-6">
-            {markdown(body)}
+            {markdown.convert(body)}
         </div>
         <div class="col-sm-3">&nbsp;</div>""".lstrip()
 
