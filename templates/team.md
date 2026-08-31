@@ -9,9 +9,11 @@ The following text is meaningless gibberish that is being used to illustrate how
 
 ----
 
-## Section 1
+## Member 1
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
+![A cartoon smiley-face](resources/smiley.png)  
+
+[Member 1](team_member1.html) lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
 ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu
 libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu
 neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
@@ -23,7 +25,11 @@ mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. D
 mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci
 dignissim rutrum.  
 
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+## Member 2
+
+![A cartoon smiley-face](resources/smiley.png)  
+
+[Member 2](#) nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
 lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec
 aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio
 metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec
@@ -31,7 +37,11 @@ ante. Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis parturien
 montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper
 vestibulum turpis. Pellentesque cursus luctus mauris.  
 
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt
+## Member 3
+
+![A cartoon smiley-face](resources/smiley.png)  
+
+[Member 3](#) nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt
 tristique, libero. Vivamus viverra fermentum felis. Donec nonummy pellentesque ante.
 Phasellus adipiscing semper elit. Proin fermentum massa ac quam. Sed diam turpis,
 molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula,
@@ -41,16 +51,22 @@ vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec bibendum
 quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu
 enim. Vestibulum pellentesque felis eu massa.  
 
-Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt
+## Member 4
+
+![A cartoon smiley-face](resources/smiley.png)  
+
+[Member 4](#) quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt
 ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In hac habitasse
 platea dictumst. Integer tempus convallis augue. Etiam facilisis. Nunc elementum
 fermentum wisi. Aenean placerat. Ut imperdiet, enim sed gravida sollicitudin, felis
 odio placerat quam, ac pulvinar elit purus eget enim. Nunc vitae tortor. Proin tempus
 nibh sit amet nisl. Vivamus quis tortor vitae risus porta vehicula.  
 
-## Section 2
+## Member 5
 
-Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus
+![A cartoon smiley-face](resources/smiley.png)  
+
+[Member 5](#) fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus
 semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl. Vestibulum diam.
 Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue quam, in
 hendrerit risus eros eget felis. Maecenas eget erat in sapien mattis porttitor.
@@ -60,7 +76,11 @@ cursus dui. Mauris tempor ligula sed lacus. Duis cursus enim ut augue. Cras ac m
 Cras nulla. Nulla egestas. Curabitur a leo. Quisque egestas wisi eget nunc. Nam
 feugiat lacus vel est. Curabitur consectetuer.  
 
-Suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae,
+## Member 6
+
+![A cartoon smiley-face](resources/smiley.png)  
+
+[Member 6](#) suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae,
 arcu. Aenean faucibus pede eu ante. Praesent enim elit, rutrum at, molestie non,
 nonummy vel, nisl. Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus,
 magna. Donec eu purus. Quisque vehicula, urna sed ultricies auctor, pede lorem
@@ -68,7 +88,11 @@ egestas dui, et convallis elit erat sed nulla. Donec luctus. Curabitur et nunc. 
 dolor odio, commodo pretium, ultricies non, pharetra in, velit. Integer arcu est,
 nonummy in, fermentum faucibus, egestas vel, odio.  
 
-Sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula
+## Member 7
+
+![A cartoon smiley-face](resources/smiley.png)  
+
+[Member 7](#) sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula
 hendrerit sem. Duis non odio. Morbi ut dui. Sed accumsan risus eget odio. In hac
 habitasse platea dictumst. Pellentesque non elit. Fusce sed justo eu urna porta
 tincidunt. Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat. Morbi quis
