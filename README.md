@@ -47,7 +47,7 @@ More substantial issues can be dealt with by updating the [python script](markdo
 
 2. Transfer any images or other required resources (PDF files, videos, etc.) to the `/var/www/openquantumreality.org/html/resources/` directory on the web server.
 
-3. On the web server, navigate to the `/var/www/openquantumreality.org` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like (the specific output will be different as the code in this repository gets updated but the output should look something like this).
+3. On the web server, navigate to the `/var/www/openquantumreality.org` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like (the specific output will be different as the code in this repository gets updated but the output should look something like) this.
 <pre>
 <b>(mike@sudarshan ~)$ cd /var/www/openquantumreality.org</b>
 <b>(mike@sudarshan <main> openquantumreality.org)$ git pull</b>
