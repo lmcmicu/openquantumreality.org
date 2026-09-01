@@ -5,7 +5,7 @@
 **Either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) or offline:**
 
 > [!NOTE]
-> If using GitHub, follow the directions for editing files in [your own repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository). You do not need to fork this repository.
+> If using GitHub, follow the directions for editing files in [your own repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository). You do not need to fork the repository.
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory using [markdown syntax](https://daringfireball.net/projects/markdown/syntax).
 
@@ -22,7 +22,8 @@
 > [!CAUTION]
 > Before making any changes to the server, you should dry run the changes to be merged on your own workstation to be certain that that the files in the `html/` directory are being generated correctly.
 > 1. Run `make test` and then `make -B`
-> 2. Open each of the `.html` files in the `html/` directory (on your laptop) in your browser, using **File->Open**, to verify that the generated contents are correct. Everything should display correctly, including images, and audio files should play, etc., as expected if you were interacting with the actual site online.
+> 2. Open each of the `.html` files in the `html/` directory (on your laptop) in your browser, using  
+> **File->Open**, to verify that the generated contents are correct. Everything should display correctly, including images, and audio files should play, etc., as expected if you were interacting with the actual site online.
 
 **If there are problems with the output**, adjust the `.md` file accordingly (or get the author of the proposed changes to do it) until compilation gives the desired output. In particular, **inspect the beginnings and endings of each generated column** in the `.html` file to make sure that the split didn't occur at a spot that would invalidate a html tag or markdown ref, for instance. If there is a problem, then the easiest way to fix it is by adding whitespace characters, e.g., `&nbsp;`, to the end of the document, e.g.,
 ```
