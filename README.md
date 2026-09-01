@@ -35,7 +35,7 @@ fermentum vel, eleifend faucibus, vehicula eu, lacus.
 &nbsp;
 &nbsp;
 ```
-This will fool the script that we use to generate the `.html` from the markdown file into thinking that the file is longer and thus into splitting the text into two columns at a different location.  
+This will fool the script that we use to generate a `.html` file into thinking that the markdown file is longer than it actually is and thus into splitting the text into two columns at a different location.  
 
 Note also that the **paths to linked images or other resources need to be adjusted** so that `resource.ext` becomes `resources/resource.ext` and those images need to be in the `html/resources/` directory.  
 
