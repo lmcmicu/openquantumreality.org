@@ -50,7 +50,7 @@ More substantial issues can be dealt with by updating the [python script](markdo
 3. On the web server, navigate to the `/var/www/openquantumreality.org` directory, update the source code using `git pull`, run `make test`, and finally recompile the `html/` code using `make` (or `make -B`). If all goes well, this will look like (the specific output will be different depending on the specific changes but the output should look something like) this.
 <pre>
 <b>(mike@sudarshan ~)$ cd /var/www/openquantumreality.org</b>
-<b>(mike@sudarshan <main> openquantumreality.org)$ git pull</b>
+<b>(mike@sudarshan \<main\> openquantumreality.org)$ git pull</b>
 remote: Enumerating objects: 16, done.
 remote: Counting objects: 100% (16/16), done.
 remote: Compressing objects: 100% (5/5), done.
@@ -66,7 +66,7 @@ Fast-forward
  3 files changed, 148 insertions(+), 4 deletions(-)
  create mode 120000 markdown/README.md
  create mode 100644 templates_html/news_item1.html
-<b>(mike@sudarshan <main> openquantumreality.org)$ make test</b>
+<b>(mike@sudarshan \<main\> openquantumreality.org)$ make test</b>
 Files test/html/events.html and templates_html/events.html are identical
 Files test/html/index.html and templates_html/index.html are identical
 Files test/html/join.html and templates_html/join.html are identical
@@ -75,7 +75,7 @@ Files test/html/news_item1.html and templates_html/news_item1.html are identical
 Files test/html/research.html and templates_html/research.html are identical
 Files test/html/team.html and templates_html/team.html are identical
 Files test/html/team_member1.html and templates_html/team_member1.html are identical
-<b>(mike@sudarshan <main> openquantumreality.org)$ make -B</b>
+<b>(mike@sudarshan \<main\> openquantumreality.org)$ make -B</b>
 python3 markdown2html.py markdown/README.md src/README-from-markdown.html
 python3 markdown2html.py markdown/events.md src/events-from-markdown.html
 python3 markdown2html.py markdown/index.md src/index-from-markdown.html
@@ -93,7 +93,7 @@ python3 jinja2html.py src/news_item1.jinja2 html/news_item1.html
 python3 jinja2html.py src/research.jinja2 html/research.html
 python3 jinja2html.py src/team.jinja2 html/team.html
 python3 jinja2html.py src/team_member1.jinja2 html/team_member1.html
-<b>(mike@sudarshan <main> openquantumreality.org)$</b>
+<b>(mike@sudarshan \<main\> openquantumreality.org)$</b>
 </pre>
 
 4. Ideally, you will have already recompiled the code on your own laptop and **verified that you can do so without any errors before making changes to the server**, so there should be no errors. If there are errors, adjust the `.md` files as necessary (see the instructions above).
