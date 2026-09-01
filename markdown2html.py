@@ -50,7 +50,7 @@ def main():
         header = ''.join(args.INPUT.rsplit('.', 1)[:-1])
         header = os.path.basename(header).replace('_', ' ').capitalize()
 
-    markdown_parser = Markdown()
+    markdown_parser = Markdown(extensions=['tables'])
     is_p_start = re.compile(r"<\s*[pP]\s*>")
     is_p_end = re.compile(r"<\s*/\s*p\s*>")
     is_br = re.compile(r"<\s*br\s*/\s*>")
@@ -97,6 +97,7 @@ def main():
         <div class="col-sm-6" style="text-align: left;">
             {convert(body[cutoff_index:])}
         </div>""".lstrip()
+        centering = ""
     else:
         columns = f"""
         <div class="col-sm-2">&nbsp;</div>
@@ -104,9 +105,10 @@ def main():
             {convert(body)}
         </div>
         <div class="col-sm-2">&nbsp;</div>""".lstrip()
+        centering = "text-center"
 
     contents = f"""
-    <div class="container text-center">
+    <div class="container {centering}">
         <h1>{header}</h1>
         <hr/>
         <div class="row align-items-start" style="margin-bottom: 60px">

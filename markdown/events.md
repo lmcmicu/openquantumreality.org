@@ -1,78 +1,136 @@
 # Events
 
-You have found the web site of the John Templeton Foundation-funded project:
-[Open Quantum Systems and the Causal Structure of Reality](https://www.templeton.org/grant/open-quantum-systems-and-causal-structure-of-reality).  
+#### January 2026
+|                  Mon |                   Tue |                   Wed |                  Thu |                   Fri | Sat | Sun |
+|---------------------:|----------------------:|----------------------:|---------------------:|----------------------:|----:|----:|
+|                      |                       |                       |                    1 |                     2 |   3 |   4 |
+| [5](https://doi.org) |                     6 |                     7 | [8](https://doi.org) |                     9 |  10 |  11 |
+|                   12 | [13](https://doi.org) |                    14 |                   15 |                    16 |  17 |  18 |
+|                   19 |                    20 | [21](https://doi.org) |                   22 |                    23 |  24 |  25 |
+|                   26 |                    27 |                    28 |                   29 | [30](https://doi.org) |  31 |     |
 
-These pages are currently under construction. Please check back later for updates.  
+<pre></pre>
 
-The following text is meaningless gibberish that is being used to illustrate how the text on this page is being rendered into columns.
+#### February 2026
+| Mon | Tue | Wed | Thu |                   Fri | Sat | Sun |
+|----:|----:|----:|----:|----------------------:|----:|----:|
+|     |     |     |     |                       |     |   1 |
+|   2 |   3 |   4 |   5 |                     6 |   7 |   8 |
+|   9 |  10 |  11 |  12 | [13](https://doi.org) |  14 |  15 |
+|  16 |  17 |  18 |  19 |                    20 |  21 |  22 |
+|  23 |  24 |  25 |  26 |                    27 |  28 |     |
 
-----
+<pre></pre>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
-ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu
-libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu
-neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus
-vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat.
-Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo
-ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at,
-mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh
-mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci
-dignissim rutrum.  
+#### March 2026
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |     |     |     |     |     |   1 |
+|   2 |   3 |   4 |   5 |   6 |   7 |   8 |
+|   9 |  10 |  11 |  12 |  13 |  14 |  15 |
+|  16 |  17 |  18 |  19 |  20 |  21 |  22 |
+|  23 |  24 |  25 |  26 |  27 |  28 |  29 |
+|  30 |  31 |     |     |     |     |     |
 
-## Section 1
+<pre></pre>
 
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
-lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec
-aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio
-metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec
-ante. Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis parturient
-montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper
-vestibulum turpis. Pellentesque cursus luctus mauris.  
+#### April 2026
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |     |   1 |   2 |   3 |   4 |   5 |
+|   6 |   7 |   8 |   9 |  10 |  11 |  12 |
+|  13 |  14 |  15 |  16 |  17 |  18 |  19 |
+|  20 |  21 |  22 |  23 |  24 |  25 |  26 |
+|  27 |  28 |  29 |  30 |     |     |     |
 
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt
-tristique, libero. Vivamus viverra fermentum felis. Donec nonummy pellentesque ante.
-Phasellus adipiscing semper elit. Proin fermentum massa ac quam. Sed diam turpis,
-molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula,
-eleifend at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc
-eleifend consequat lorem. Sed lacinia nulla vitae enim. Pellentesque tincidunt purus
-vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec bibendum
-quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu
-enim. Vestibulum pellentesque felis eu massa.  
+<pre></pre>
 
-## Section 2
+#### May 2026
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |     |     |     |   1 |   2 |   3 |
+|   4 |   5 |   6 |   7 |   8 |   9 |  10 |
+|  11 |  12 |  13 |  14 |  15 |  16 |  17 |
+|  18 |  19 |  20 |  21 |  22 |  23 |  24 |
+|  25 |  26 |  27 |  28 |  29 |  30 |  31 |
 
-Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt
-ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In hac habitasse
-platea dictumst. Integer tempus convallis augue. Etiam facilisis. Nunc elementum
-fermentum wisi. Aenean placerat. Ut imperdiet, enim sed gravida sollicitudin, felis
-odio placerat quam, ac pulvinar elit purus eget enim. Nunc vitae tortor. Proin tempus
-nibh sit amet nisl. Vivamus quis tortor vitae risus porta vehicula.  
+<pre></pre>
 
-Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus
-semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl. Vestibulum diam.
-Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue quam, in
-hendrerit risus eros eget felis. Maecenas eget erat in sapien mattis porttitor.
-Vestibulum porttitor. Nulla facilisi. Sed a turpis eu lacus commodo facilisis. Morbi
-fringilla, wisi in dignissim interdum, justo lectus sagittis dui, et vehicula libero dui
-cursus dui. Mauris tempor ligula sed lacus. Duis cursus enim ut augue. Cras ac magna.
-Cras nulla. Nulla egestas. Curabitur a leo. Quisque egestas wisi eget nunc. Nam
-feugiat lacus vel est. Curabitur consectetuer.  
+#### June 2026  
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|   1 |   2 |   3 |   4 |   5 |   6 |   7 |
+|   8 |   9 |  10 |  11 |  12 |  13 |  14 |
+|  15 |  16 |  17 |  18 |  19 |  20 |  21 |
+|  22 |  23 |  24 |  25 |  26 |  27 |  28 |
+|  29 |  30 |     |     |     |     |     |
 
-Suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae,
-arcu. Aenean faucibus pede eu ante. Praesent enim elit, rutrum at, molestie non,
-nonummy vel, nisl. Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus,
-magna. Donec eu purus. Quisque vehicula, urna sed ultricies auctor, pede lorem
-egestas dui, et convallis elit erat sed nulla. Donec luctus. Curabitur et nunc. Aliquam
-dolor odio, commodo pretium, ultricies non, pharetra in, velit. Integer arcu est,
-nonummy in, fermentum faucibus, egestas vel, odio.  
+<pre></pre>
 
-Sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula
-hendrerit sem. Duis non odio. Morbi ut dui. Sed accumsan risus eget odio. In hac
-habitasse platea dictumst. Pellentesque non elit. Fusce sed justo eu urna porta
-tincidunt. Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat. Morbi quis
-dolor. Donec pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis
-congue purus metus ultricies tellus. Proin et quam. Class aptent taciti sociosqu ad
-litora torquent per conubia nostra, per inceptos hymenaeos. Praesent sapien turpis,
-fermentum vel, eleifend faucibus, vehicula eu, lacus.  
+#### July 2026  
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |     |   1 |   2 |   3 |   4 |   5 |
+|   6 |   7 |   8 |   9 |  10 |  11 |  12 |
+|  13 |  14 |  15 |  16 |  17 |  18 |  19 |
+|  20 |  21 |  22 |  23 |  24 |  25 |  26 |
+|  27 |  28 |  29 |  30 |  31 |     |     |
+
+<pre></pre>
+
+#### August 2026  
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |     |     |     |     |   1 |   2 |
+|   3 |   4 |   5 |   6 |   7 |   8 |   9 |
+|  10 |  11 |  12 |  13 |  14 |  15 |  16 |
+|  17 |  18 |  19 |  20 |  21 |  22 |  23 |
+|  24 |  25 |  26 |  27 |  28 |  29 |  30 |
+|  31 |     |     |     |     |     |     |
+
+<pre></pre>
+
+#### September 2026  
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |   1 |   2 |   3 |   4 |   5 |   6 |
+|   7 |   8 |   9 |  10 |  11 |  12 |  13 |
+|  14 |  15 |  16 |  17 |  18 |  19 |  20 |
+|  21 |  22 |  23 |  24 |  25 |  26 |  27 |
+|  28 |  29 |  30 |     |     |     |     |
+
+<pre></pre>
+
+#### October 2026  
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |     |     |   1 |   2 |   3 |   4 |
+|   5 |   6 |   7 |   8 |   9 |  10 |  11 |
+|  12 |  13 |  14 |  15 |  16 |  17 |  18 |
+|  19 |  20 |  21 |  22 |  23 |  24 |  25 |
+|  26 |  27 |  28 |  29 |  30 |  31 |     |
+
+<pre></pre>
+
+#### November 2026  
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |     |     |     |     |     |   1 |
+|   2 |   3 |   4 |   5 |   6 |   7 |   8 |
+|   9 |  10 |  11 |  12 |  13 |  14 |  15 |
+|  16 |  17 |  18 |  19 |  20 |  21 |  22 |
+|  23 |  24 |  25 |  26 |  27 |  28 |  29 |
+|  30 |     |     |     |     |     |     |
+
+<pre></pre>
+
+#### December 2026  
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|----:|----:|----:|----:|----:|----:|----:|
+|     |   1 |   2 |   3 |   4 |   5 |   6 |
+|   7 |   8 |   9 |  10 |  11 |  12 |  13 |
+|  14 |  15 |  16 |  17 |  18 |  19 |  20 |
+|  21 |  22 |  23 |  24 |  25 |  26 |  27 |
+|  28 |  29 |  30 |  31 |     |     |     |
+
+<pre></pre>
