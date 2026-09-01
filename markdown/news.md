@@ -28,7 +28,7 @@ dignissim rutrum.
 
 ## News item 2
 
-Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt
+[Quisque ullamcorper placerat ipsum](news_item1.html). Cras nibh. Morbi vel justo vitae lacus tincidunt
 ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In hac habitasse
 platea dictumst. Integer tempus convallis augue. Etiam facilisis. Nunc elementum
 fermentum wisi. Aenean placerat. Ut imperdiet, enim sed gravida sollicitudin, felis
@@ -37,7 +37,7 @@ nibh sit amet nisl. Vivamus quis tortor vitae risus porta vehicula.
 
 ## News item 3
 
-Sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula
+Sed commodo posuere pede. Mauris ut est. [Ut quis purus](news_item1.html). Sed ac odio. Sed vehicula
 hendrerit sem. Duis non odio. Morbi ut dui. Sed accumsan risus eget odio. In hac
 habitasse platea dictumst. Pellentesque non elit. Fusce sed justo eu urna porta
 tincidunt. Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat. Morbi quis
@@ -48,7 +48,7 @@ fermentum vel, eleifend faucibus, vehicula eu, lacus.
 
 ## News item 4
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
+Lorem ipsum dolor sit amet, [consectetuer adipiscing elit](news_item1.html). Ut purus elit, vestibulum
 ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu
 libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu
 neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac

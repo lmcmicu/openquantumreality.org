@@ -29,7 +29,7 @@ dignissim rutrum.
 
 ![A cartoon smiley-face](resources/smiley.png)  
 
-[Member 2](#) nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
+[Member 2](team_member1.html) nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor
 lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec
 aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio
 metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec
@@ -41,7 +41,7 @@ vestibulum turpis. Pellentesque cursus luctus mauris.
 
 ![A cartoon smiley-face](resources/smiley.png)  
 
-[Member 3](#) nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt
+[Member 3](team_member1.html) nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt
 tristique, libero. Vivamus viverra fermentum felis. Donec nonummy pellentesque ante.
 Phasellus adipiscing semper elit. Proin fermentum massa ac quam. Sed diam turpis,
 molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula,
@@ -55,7 +55,7 @@ enim. Vestibulum pellentesque felis eu massa.
 
 ![A cartoon smiley-face](resources/smiley.png)  
 
-[Member 4](#) quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt
+[Member 4](team_member1.html) quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt
 ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In hac habitasse
 platea dictumst. Integer tempus convallis augue. Etiam facilisis. Nunc elementum
 fermentum wisi. Aenean placerat. Ut imperdiet, enim sed gravida sollicitudin, felis
@@ -66,7 +66,7 @@ nibh sit amet nisl. Vivamus quis tortor vitae risus porta vehicula.
 
 ![A cartoon smiley-face](resources/smiley.png)  
 
-[Member 5](#) fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus
+[Member 5](team_member1.html) fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus
 semper, leo velit ultricies tellus, ac venenatis arcu wisi vel nisl. Vestibulum diam.
 Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue quam, in
 hendrerit risus eros eget felis. Maecenas eget erat in sapien mattis porttitor.
@@ -80,7 +80,7 @@ feugiat lacus vel est. Curabitur consectetuer.
 
 ![A cartoon smiley-face](resources/smiley.png)  
 
-[Member 6](#) suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae,
+[Member 6](team_member1.html) suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae,
 arcu. Aenean faucibus pede eu ante. Praesent enim elit, rutrum at, molestie non,
 nonummy vel, nisl. Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus,
 magna. Donec eu purus. Quisque vehicula, urna sed ultricies auctor, pede lorem
@@ -92,7 +92,7 @@ nonummy in, fermentum faucibus, egestas vel, odio.
 
 ![A cartoon smiley-face](resources/smiley.png)  
 
-[Member 7](#) sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula
+[Member 7](team_member1.html) sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula
 hendrerit sem. Duis non odio. Morbi ut dui. Sed accumsan risus eget odio. In hac
 habitasse platea dictumst. Pellentesque non elit. Fusce sed justo eu urna porta
 tincidunt. Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat. Morbi quis
