@@ -47,7 +47,7 @@ More substantial issues can be dealt with by updating the [python script](markdo
 
 2. Transfer any images or other required resources (PDF files, videos, etc.) to the `/var/www/openquantumreality.org/html/resources/` directory on the web server.
 
-3. On the web server, navigate to the `/var/www/openquantumreality.org` directory, update the source code using `git pull`, and recompile it using `make` (or `make -B`). If all goes well, this will look like (the specific output will be different depending on the specific changes but the output should look something like) this.
+3. On the web server, navigate to the `/var/www/openquantumreality.org` directory, update the source code using `git pull`, run `make test`, and finally recompile the `html/` code using `make` (or `make -B`). If all goes well, this will look like (the specific output will be different depending on the specific changes but the output should look something like) this.
 <pre>
 <b>(mike@sudarshan ~)$ cd /var/www/openquantumreality.org</b>
 <b>(mike@sudarshan <main> openquantumreality.org)$ git pull</b>
@@ -66,6 +66,15 @@ Fast-forward
  3 files changed, 148 insertions(+), 4 deletions(-)
  create mode 120000 markdown/README.md
  create mode 100644 templates_html/news_item1.html
+<b>(mike@sudarshan <main> openquantumreality.org)$ make test</b>
+Files test/html/events.html and templates_html/events.html are identical
+Files test/html/index.html and templates_html/index.html are identical
+Files test/html/join.html and templates_html/join.html are identical
+Files test/html/news.html and templates_html/news.html are identical
+Files test/html/news_item1.html and templates_html/news_item1.html are identical
+Files test/html/research.html and templates_html/research.html are identical
+Files test/html/team.html and templates_html/team.html are identical
+Files test/html/team_member1.html and templates_html/team_member1.html are identical
 <b>(mike@sudarshan <main> openquantumreality.org)$ make -B</b>
 python3 markdown2html.py markdown/README.md src/README-from-markdown.html
 python3 markdown2html.py markdown/events.md src/events-from-markdown.html

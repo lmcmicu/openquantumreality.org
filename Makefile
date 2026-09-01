@@ -47,7 +47,7 @@ src/%-from-markdown.html: markdown/%.md
 test: build_test | test/html test/src
 	@for htmlfile in $(notdir $(html_testfiles)); \
 	do \
-		diff --strip-trailing-cr -Z -s -q test/html/$$htmlfile templates_html/$$htmlfile ; \
+		diff --strip-trailing-cr -Z -s -q test/html/$$htmlfile templates_html/$$htmlfile || exit 1 ; \
 	done
 
 build_test: $(jinja2_testfiles:test/src/%.jinja2=test/html/%.html)
