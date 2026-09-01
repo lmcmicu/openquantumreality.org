@@ -23,8 +23,9 @@
 > [!CAUTION]
 > Before making any changes to the server, you should dry run the changes to be merged on your own workstation to be certain that that the files in the `html/` directory are being generated correctly.
 > 1. Run `make test` and then `make -B`
-> 2. Open each of the `.html` files in the `html/` directory (on your laptop) in your browser, using  
-> **File->Open**, to verify that the generated contents are correct. Everything should display correctly, including images, and audio files should play, etc., as expected if you were interacting with the actual site online.
+> 2. Open each of the `.html` files in the `html/` directory (on your laptop) in your browser using  
+>      **File->Open**  
+>    to verify that the generated contents are correct. Everything should display correctly, including images, and audio files should play, etc., as expected if you were interacting with the actual site online.
 
 **If there are problems with the output**, adjust the `.md` file accordingly (or get the author of the proposed changes to do it) until compilation gives the desired output. In particular, **inspect the beginnings and endings of each generated column** in the `.html` file to make sure that the split didn't occur at a spot that would invalidate a html tag or markdown ref, for instance. If there is a problem, then the easiest way to fix it is by adding whitespace characters, e.g., `&nbsp;`, to the end of the document, e.g.,
 ```
@@ -48,7 +49,7 @@ More substantial issues can be dealt with by updating the [python script](markdo
 
 2. Transfer any images or other required resources (PDF files, videos, etc.) to the `/var/www/openquantumreality.org/html/resources/` directory on the web server.
 
-3. On the web server, navigate to the `/var/www/openquantumreality.org` directory, update the source code using `git pull`, run `make test`, and finally recompile the `html/` code using `make` (or `make -B`). If all goes well, this will look like (the specific output will be different depending on the specific changes but the output should look something like) this.
+3. On the web server, navigate to the `/var/www/openquantumreality.org` directory, update the source code using `git pull`, run `make test`, and finally recompile the `html/` code using `make -B`. If all goes well, this will look like (the specific output will be different depending on the specific changes but the output should look something like) this.
 <pre>
 <b>(mike@sudarshan ~)$ cd /var/www/openquantumreality.org</b>
 <b>(mike@sudarshan &lt;main&gt; openquantumreality.org)$ git pull</b>
