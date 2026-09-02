@@ -69,6 +69,7 @@ def main():
         html = is_tooltip.sub(
             'data-bs-toggle="tooltip" '
             'data-bs-trigger="hover" '
+            'data-bs-delay="500" '
             'data-bs-html="true" '
             'title="',
             html
