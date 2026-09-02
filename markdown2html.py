@@ -69,7 +69,6 @@ def main():
         html = is_tooltip.sub(
             'data-bs-toggle="tooltip" '
             'data-bs-placement="auto" '
-            'data-bs-container="body" '
             'data-bs-html="true" '
             'title="',
             html
