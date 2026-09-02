@@ -83,7 +83,10 @@ def main():
         return index
 
     def in_block(line):
-        return line.startswith("|")
+        return line.startswith("|") or \
+            line.startswith(">") or \
+            line.startswith("\t") or \
+            line.startswith("    ")
 
     def get_lines_at_cutoff(body, cutoff_index):
         previous_index = get_prev_newline_index(body, cutoff_index)
