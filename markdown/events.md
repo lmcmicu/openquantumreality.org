@@ -1,8 +1,6 @@
 # Events
 
-<pre></pre>
-
-&nbsp;
+<!-- Based on https://ellanew.com/2025/12/30/markdown-calendars-2026 -->
 
 #### January 2026
 |        Mon |         Tue |         Wed |        Thu |         Fri | Sat | Sun |
@@ -170,19 +168,11 @@
 
 <pre></pre>
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+<!-- To get the two columns on the page to align properly, add or subtract spaces as needed below.
+     This is a hack (and it isn't perfect) but it will have to do until we think of a better
+     solution.
+ -->
+
 &nbsp;
 &nbsp;
 &nbsp;

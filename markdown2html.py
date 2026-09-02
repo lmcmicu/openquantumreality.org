@@ -82,14 +82,36 @@ def main():
             index += 1
         return index
 
-    def get_prev_newline_index(body, this_newline_index):
-        prev_newline_index = this_newline_index - 1
+    def in_block(line):
+        return line.startswith("|")
+
+    def get_lines_at_cutoff(body, cutoff_index):
+        previous_index = get_prev_newline_index(body, cutoff_index)
+        previous_line = body[previous_index + 1: cutoff_index]
+        next_index = get_next_newline_index(body, cutoff_index)
+        next_line = body[cutoff_index + 1 : next_index]
+        return previous_line, previous_index, next_line, next_index
+
+    def get_column_cutoff(body):
+        cutoff_index = get_middle_newline_index(body)
+        previous_line, _, next_line, next_index = get_lines_at_cutoff(
+            body, cutoff_index
+        )
+        while in_block(previous_line) and in_block(next_line):
+            cutoff_index = next_index
+            previous_line, _, next_line, next_index = get_lines_at_cutoff(
+                body, cutoff_index
+            )
+        return cutoff_index
+
+    def get_prev_newline_index(body, newline_index):
+        prev_newline_index = newline_index - 1
         while prev_newline_index > 0 and body[prev_newline_index] != "\n":
             prev_newline_index -= 1
         return prev_newline_index
 
-    def get_next_newline_index(body, this_newline_index):
-        next_newline_index = this_newline_index + 1
+    def get_next_newline_index(body, newline_index):
+        next_newline_index = newline_index + 1
         while next_newline_index < len(body) and body[next_newline_index] != "\n":
             next_newline_index += 1
         return next_newline_index
@@ -102,7 +124,7 @@ def main():
         # .md file at around the cutoff point to force it to cutoff somewhere different. This
         # should work since whitespace is counted when determining the initial guess for the mid
         # point.
-        cutoff_index = get_middle_newline_index(body)
+        cutoff_index = get_column_cutoff(body)
         columns = f"""
         <div class="col-sm-6" style="text-align: left;">
             {convert(body[:cutoff_index])}
