@@ -54,12 +54,16 @@ def main():
     is_p_start = re.compile(r"<\s*[pP]\s*>")
     is_p_end = re.compile(r"<\s*/\s*p\s*>")
     is_br = re.compile(r"<\s*br\s*/\s*>")
+    is_td = re.compile(r"<td ")
+    is_th = re.compile(r"<th ")
 
     def convert(markdown):
         html = markdown_parser.convert(markdown)
         html = is_p_start.sub('<p class="mb-4">', html)
         html = is_p_end.sub("</p>", html)
         html = is_br.sub('<span style="height: 12px; display: block;"></span>', html)
+        html = is_td.sub('<td class="font-monospace" ', html)
+        html = is_th.sub('<th class="font-monospace" ', html)
         return html
 
     def get_middle_newline_index(body):
