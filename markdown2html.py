@@ -62,8 +62,8 @@ def main():
         html = is_p_start.sub('<p class="mb-4">', html)
         html = is_p_end.sub("</p>", html)
         html = is_br.sub('<span style="height: 12px; display: block;"></span>', html)
-        html = is_td.sub('<td class="font-monospace" ', html)
-        html = is_th.sub('<th class="font-monospace" ', html)
+        html = is_td.sub('<td class="font-monospace fst-italic" ', html)
+        html = is_th.sub('<th class="font-monospace fst-italic" ', html)
         return html
 
     def get_middle_newline_index(body):
