@@ -67,6 +67,7 @@ def main():
         html = is_td.sub('<td class="font-monospace fst-italic" ', html)
         html = is_th.sub('<th class="font-monospace fst-italic" ', html)
         html = is_tooltip.sub(
+            'target="__blank" '
             'data-bs-toggle="tooltip" '
             'data-bs-trigger="hover" '
             'data-bs-html="true" '
