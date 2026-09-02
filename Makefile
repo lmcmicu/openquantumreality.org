@@ -58,7 +58,7 @@ test/html:
 
 test/src:
 	mkdir -p $@
-	cp -f src/*.jinja2 src/bootstrap* src/navbar-fragment.html src/page-footer.html $@
+	cp -f templates/src/*.jinja2 templates/src/bootstrap* templates/src/navbar-fragment.html templates/src/page-footer.html $@
 	@echo "Test directory created. Please run ~make test~ again."
 
 test/html/%.html: test/src/%.jinja2 $(template_files:templates/%.md=test/src/%-from-markdown.html)
