@@ -1,5 +1,9 @@
 # Events
 
+<pre></pre>
+
+&nbsp;
+
 #### January 2026
 |        Mon |         Tue |         Wed |        Thu |         Fri | Sat | Sun |
 |-----------:|------------:|------------:|-----------:|------------:|----:|----:|
@@ -11,11 +15,11 @@
 
 <pre></pre>
 
-[jan05]: http://doi.org "Invited Lecture by Duns Scotus"
-[jan08]: http://doi.org "Graduate student colloquium talk on: Latin Yesterday and Today"
+[jan05]: http://doi.org "<em>Invited Lecture</em> by Duns Scotus"
+[jan08]: http://doi.org "Graduate student colloquium talk on: <em>Latin Yesterday and Today</em>"
 [jan13]: http://doi.org "Department meeting"
 [jan21]: http://doi.org "Team-building wilderness hike"
-[jan30]: http://doi.org "Invited lecture by Anselm of Canterbury"
+[jan30]: http://doi.org "<em>Invited lecture</em> by Anselm of Canterbury"
 
 &nbsp;
 
