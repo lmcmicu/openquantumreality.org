@@ -68,8 +68,6 @@ def main():
         html = is_th.sub('<th class="font-monospace fst-italic" ', html)
         html = is_tooltip.sub(
             'data-bs-toggle="tooltip" '
-            'data-bs-delay="100" '
-            'data-bs-animation="true" '
             'data-bs-html="true" '
             'title="',
             html
