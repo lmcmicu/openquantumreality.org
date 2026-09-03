@@ -3,11 +3,13 @@
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
-  function closeTooltips() {
+
+  function refreshTooltips() {
     tooltipList.forEach(function (tooltip, index) {
-      // console.log(tooltip);
-      // console.log(index);
-      tooltip.toggleEnabled();
+      tooltip.dispose();
+    });
+    tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
     });
   }
 </script>

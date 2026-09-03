@@ -69,7 +69,7 @@ def main():
         html = is_tooltip.sub(
             'data-bs-toggle="tooltip" '
             'data-bs-html="true" '
-            'onclick="return closeTooltips();" '
+            'onclick="return refreshTooltips();" '
             'title="',
             html
         )
