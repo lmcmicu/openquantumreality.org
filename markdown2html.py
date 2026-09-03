@@ -66,6 +66,7 @@ def main():
         html = is_br.sub('<span style="height: 12px; display: block;"></span>', html)
         html = is_td.sub('<td class="font-monospace fst-italic" ', html)
         html = is_th.sub('<th class="font-monospace fst-italic" ', html)
+        # TODO: Use popovers with links instead (since tooltips don't work for touch screens).
         html = is_tooltip.sub(
             'data-bs-toggle="tooltip" '
             'data-bs-html="true" '

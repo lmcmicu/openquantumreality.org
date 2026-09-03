@@ -2,6 +2,8 @@
 
 <!-- Based on https://ellanew.com/2025/12/30/markdown-calendars-2026 -->
 
+<pre></pre>
+
 #### January 2026
 |        Mon |         Tue |         Wed |        Thu |         Fri | Sat | Sun |
 |-----------:|------------:|------------:|-----------:|------------:|----:|----:|
@@ -13,11 +15,25 @@
 
 <pre></pre>
 
-[jan05]: http://doi.org "<em>Invited Lecture</em> by Duns Scotus"
-[jan08]: http://doi.org "Graduate student colloquium talk on: <em>Latin Yesterday and Today</em>"
-[jan13]: http://doi.org "Department meeting"
-[jan21]: http://doi.org "Team-building wilderness hike"
-[jan30]: http://doi.org "<em>Invited lecture</em> by Anselm of Canterbury"
+<!-- Note that these descriptions should be a *one-line* summary of the events for that day
+     Unfortunately one line is mandatory. To work around it you may use <br/> to indicate a
+     newline as in the example for January 5 below.
+ -->
+
+[jan05]: event_2006_01_05.html
+"11:00 Cras viverra metus<br/><br/>13:00 Adipiscing vitae urna fringilla Aenean faucibus<br/><br/>16:00 Invited Lecture: Duns Scotus, <em>Pleonasm for Everyone</em>"
+
+[jan08]: event_2006_01_05.html
+"15:00 Graduate student colloquium talk on: <em>Latin Yesterday and Today</em>"
+
+[jan13]: event_2006_01_05.html
+"14:00 Department meeting"
+
+[jan21]: event_2006_01_05.html
+"8:00 Team-building wilderness hike"
+
+[jan30]: event_2006_01_05.html
+"16:00 Invited lecture: Bonaventure, <em>Revisiting The Four Books of Sentences</em>"
 
 &nbsp;
 
@@ -32,7 +48,8 @@
 
 <pre></pre>
 
-[feb13]: http://doi.org "Presentation by Roisin of her latest research on tortoises"
+[feb13]: event_2006_01_05.html
+"12:30 Presentation by Roisin of her latest research on tortoises"
 
 
 &nbsp;
@@ -87,8 +104,6 @@
 |  29 |  30 |     |     |     |     |     |
 
 <pre></pre>
-
-&nbsp;
 
 #### July 2026  
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
