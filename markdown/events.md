@@ -15,25 +15,37 @@
 
 <pre></pre>
 
-<!-- Note that these descriptions should be a *one-line* summary of the events for that day
-     Unfortunately one line is mandatory. To work around it you may use <br/> to indicate a
-     newline as in the example for January 5 below.
+<!-- Note the descriptions below can have no blank lines in between them. -->
+
+<!-- The .html file to the right of the ref is the event page corresponding to that ref,
+     but in principle this could be anything including a link to an external website,
+     like the other events below this one.
+
+     Note that each day description must end with a line that begins with either
+     "-" or "="
  -->
 
 [jan05]: event_2006_01_05.html
-"11:00 Cras viverra metus<br/><br/>13:00 Adipiscing vitae urna fringilla Aenean faucibus<br/><br/>16:00 Invited Lecture: Duns Scotus, <em>Pleonasm for Everyone</em>"
+11:00 Cras viverra metus
+13:00 Adipiscing vitae urna fringilla Aenean faucibus
+16:00 Invited Lecture: Duns Scotus, <em>Pleonasm for Everyone</em>
+---
 
-[jan08]: event_2006_01_05.html
-"15:00 Graduate student colloquium talk on: <em>Latin Yesterday and Today</em>"
+[jan08]: https://doi.org
+15:00 Graduate student colloquium talk on: <em>Latin Yesterday and Today</em>
+---
 
-[jan13]: event_2006_01_05.html
-"14:00 Department meeting"
+[jan13]: https://time.is/
+14:00 Department meeting
+---
 
-[jan21]: event_2006_01_05.html
-"8:00 Team-building wilderness hike"
+[jan21]: https://thebulletin.org/doomsday-clock/
+8:00 Team-building wilderness hike
+---
 
-[jan30]: event_2006_01_05.html
-"16:00 Invited lecture: Bonaventure, <em>Revisiting The Four Books of Sentences</em>"
+[jan30]: https://www.asc-csa.gc.ca/eng/
+16:00 Invited lecture: Bonaventure, <em>Revisiting The Four Books of Sentences</em>
+---
 
 &nbsp;
 
@@ -48,8 +60,9 @@
 
 <pre></pre>
 
-[feb13]: event_2006_01_05.html
-"12:30 Presentation by Roisin of her latest research on tortoises"
+[feb13]: https://en.wikipedia.org/wiki/Italian_name
+12:30 Presentation by Roisin of her latest research on tortoises
+---
 
 
 &nbsp;
@@ -188,6 +201,16 @@
      solution.
  -->
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 &nbsp;
 &nbsp;
 &nbsp;

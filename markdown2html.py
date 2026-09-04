@@ -66,15 +66,28 @@ def main():
         html = is_br.sub('<span style="height: 12px; display: block;"></span>', html)
         html = is_td.sub('<td class="font-monospace fst-italic" ', html)
         html = is_th.sub('<th class="font-monospace fst-italic" ', html)
-        # TODO: Use popovers with links instead (since tooltips don't work for touch screens).
         html = is_tooltip.sub(
             'data-bs-toggle="tooltip" '
             'data-bs-html="true" '
+            'data-bs-animation="true" '
+            'data-bs-delay=\'{"show": "0", "hide": "200"}\' '
             'onclick="return refreshTooltips();" '
             'title="',
             html
         )
         return html
+
+    def get_prev_newline_index(body, newline_index):
+        prev_newline_index = newline_index - 1
+        while prev_newline_index > 0 and body[prev_newline_index] != "\n":
+            prev_newline_index -= 1
+        return prev_newline_index
+
+    def get_next_newline_index(body, newline_index):
+        next_newline_index = newline_index + 1
+        while next_newline_index < len(body) and body[next_newline_index] != "\n":
+            next_newline_index += 1
+        return next_newline_index
 
     def get_middle_newline_index(body):
         body_len = len(body)
@@ -108,17 +121,39 @@ def main():
             )
         return cutoff_index
 
-    def get_prev_newline_index(body, newline_index):
-        prev_newline_index = newline_index - 1
-        while prev_newline_index > 0 and body[prev_newline_index] != "\n":
-            prev_newline_index -= 1
-        return prev_newline_index
+    is_calendar_ref = re.compile(r"\[[\w_]+\]: ")
 
-    def get_next_newline_index(body, newline_index):
-        next_newline_index = newline_index + 1
-        while next_newline_index < len(body) and body[next_newline_index] != "\n":
-            next_newline_index += 1
-        return next_newline_index
+    def preprocess(body):
+        lines = body.split('\n')
+        processed_lines = []
+        event_description_buffer = []
+
+        def is_eod_marker(line):
+            return line.startswith("-") or line.startswith("=")
+
+        while len(lines) > 0:
+            line = lines.pop(0)
+            if is_calendar_ref.match(line):
+                event_description_buffer.append(line)
+            elif not is_eod_marker(line):
+                if len(event_description_buffer) > 0:
+                    event_description_buffer.append(line)
+                else:
+                    processed_lines.append(line)
+            else:
+                if len(event_description_buffer) > 0:
+                    event_heading = event_description_buffer[0]
+                    event_description = "<br/><br/>".join(event_description_buffer[1:])
+                    event_description = event_description.strip('"\'')
+                    event_description = f'"{event_description}"'
+                    processed_lines.append(event_heading)
+                    processed_lines.append(event_description)
+                    # Append a blank line instead of the end of description marker:
+                    processed_lines.append("")
+                    event_description_buffer.clear()
+                else:
+                    processed_lines.append(line)
+        return "\n".join(processed_lines)
 
     if len(body) > 500:
         # Note that this isn't perfect. You must manually inspect the beginnings and endings
@@ -128,6 +163,7 @@ def main():
         # .md file at around the cutoff point to force it to cutoff somewhere different. This
         # should work since whitespace is counted when determining the initial guess for the mid
         # point.
+        body = preprocess(body)
         cutoff_index = get_column_cutoff(body)
         columns = f"""
         <div class="col-sm-6" style="text-align: left;">
