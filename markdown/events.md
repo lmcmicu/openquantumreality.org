@@ -19,19 +19,19 @@
 
 <!-- The .html file to the right of the ref is the event page corresponding to that ref,
      but in principle this could be anything including a link to an external website,
-     like the other events below this one.
+     like some of the other events below this one.
 
      Note that each day description must end with a line that begins with either
      "-" or "="
  -->
 
-[jan05]: event_2006_01_05.html
+[jan05]: events_2006_01_05.html
 11:00 Cras viverra metus
 13:00 Adipiscing vitae urna fringilla Aenean faucibus
 16:00 Invited Lecture: Duns Scotus, <em>Pleonasm for Everyone</em>
 ---
 
-[jan08]: https://doi.org
+[jan08]: events_2006_01_05.html
 15:00 Graduate student colloquium talk on: <em>Latin Yesterday and Today</em>
 ---
 
