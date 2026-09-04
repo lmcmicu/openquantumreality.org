@@ -2,6 +2,16 @@
 
 <!-- Based on https://ellanew.com/2025/12/30/markdown-calendars-2026 -->
 
+<!-- Note the description of each day below must contain no blank lines
+     and must end with a line whose first character is either "-" or "=".
+  -->
+
+<!-- Note that the .html file to the right of the ref is the local event page for
+     that ref, but in principle this could be anything including a link to an external
+     website.
+  -->
+
+
 <pre></pre>
 
 #### January 2026
@@ -14,16 +24,6 @@
 |         26 |          27 |          28 |         29 | [30][jan30] |  31 |     |
 
 <pre></pre>
-
-<!-- Note the descriptions below can have no blank lines in between them. -->
-
-<!-- The .html file to the right of the ref is the event page corresponding to that ref,
-     but in principle this could be anything including a link to an external website,
-     like some of the other events below this one.
-
-     Note that each day description must end with a line that begins with either
-     "-" or "="
- -->
 
 [jan05]: events_2006_01_05.html
 11:00 Cras viverra metus
