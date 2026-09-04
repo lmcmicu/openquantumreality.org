@@ -70,7 +70,7 @@ def main():
             'data-bs-toggle="tooltip" '
             'data-bs-html="true" '
             'data-bs-animation="true" '
-            'data-bs-delay=\'{"show": "200", "hide": "2000"}\' '
+            'data-bs-delay=\'{"show": "200", "hide": "200"}\' '
             'onclick="return refreshTooltips();" '
             'title="',
             html
