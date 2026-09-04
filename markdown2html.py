@@ -70,7 +70,7 @@ def main():
             'data-bs-toggle="tooltip" '
             'data-bs-html="true" '
             'data-bs-animation="true" '
-            'data-bs-delay=\'{"show": "200", "hide": "200"}\' '
+            'data-bs-delay=\'{"show": "200", "hide": "2000"}\' '
             'onclick="return refreshTooltips();" '
             'title="',
             html
@@ -145,6 +145,7 @@ def main():
                     event_heading = event_description_buffer[0]
                     event_description = "<br/><br/>".join(event_description_buffer[1:])
                     event_description = event_description.strip('"\'')
+                    event_description = markdown_parser.convert(event_description)
                     event_description = f'"{event_description}"'
                     processed_lines.append(event_heading)
                     processed_lines.append(event_description)

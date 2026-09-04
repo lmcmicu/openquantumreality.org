@@ -27,12 +27,12 @@
 
 [jan05]: events_2006_01_05.html
 11:00 Cras viverra metus
-13:00 Adipiscing vitae urna fringilla Aenean faucibus
-16:00 Invited Lecture: Duns Scotus, <em>Pleonasm for Everyone</em>
+13:00 Adipiscing vitae urna fringilla
+16:00 Invited Lecture: Duns Scotus, *Pleonasm for Everyone*
 ---
 
 [jan08]: events_2006_01_05.html
-15:00 Graduate student colloquium talk on: <em>Latin Yesterday and Today</em>
+15:00 Graduate student colloquium talk on: **Latin Yesterday and Today**
 ---
 
 [jan13]: https://time.is/
@@ -44,7 +44,7 @@
 ---
 
 [jan30]: https://www.asc-csa.gc.ca/eng/
-16:00 Invited lecture: Bonaventure, <em>Revisiting The Four Books of Sentences</em>
+16:00 Invited lecture: Bonaventure, _Revisiting The Four Books of Sentences_
 ---
 
 &nbsp;
