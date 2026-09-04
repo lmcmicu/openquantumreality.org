@@ -7,6 +7,9 @@
 > [!NOTE]
 > To edit content in this repository, contact the repository administrator and ask them to invite you to become a [collaborator](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository#collaborator-access-for-a-repository-owned-by-a-personal-account).
 > If you are editing files using GitHub (recommended for beginners), follow the directions for editing files in [your own repository](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository).
+> When working with markdown files in GitHub, make sure to select the "Code" tab (not "Preview").
+
+![A screenshot of a markdown page in GitHub](html/resources/markdown_edit.png)  
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory using [markdown syntax](https://daringfireball.net/projects/markdown/syntax).
 
