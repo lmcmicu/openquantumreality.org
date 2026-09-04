@@ -20,23 +20,26 @@
 MAKEFLAGS += --warn-undefined-variables
 SHELL := bash
 .DEFAULT_GOAL := all
-.DELETE_ON_ERROR:
+# .DELETE_ON_ERROR:
 .SUFFIXES:
 
-jinja2_files := $(wildcard src/*.jinja2)
-jinja2_testfiles := $(wildcard test/src/*.jinja2)
 markdown_files := $(wildcard markdown/*.md)
-template_files := $(wildcard templates/*.md)
-html_files := $(wildcard html/*.md)
-html_testfiles := $(wildcard test/html/*.html)
+html_files := $(wildcard html/*.html)
+jinja2_files := $(wildcard src/*.jinja2)
 
-.PHONY: all reinit test_setup build_test test test clean
+template_markdown_files := $(wildcard templates/markdown/*.md)
+# TODO: Do we really need these two?
+template_html_files := $(wildcard templates/html/*.html)
+template_jinja2_files := $(wildcard templates/src/*.jinja2)
+
+test_html_files := $(wildcard test/html/*.html)
+test_jinja2_files := $(wildcard test/src/*.jinja2)
+
+.PHONY: all reinit clean test
+
+# Make all the pages in the html/ directory:
 
 all: $(jinja2_files:src/%.jinja2=html/%.html)
-
-reinit:
-	rm -Rf markdown
-	cp -rp templates markdown
 
 html/%.html: src/%.jinja2 $(markdown_files:markdown/%.md=src/%-from-markdown.html)
 	python3 jinja2html.py $< $@
@@ -44,28 +47,21 @@ html/%.html: src/%.jinja2 $(markdown_files:markdown/%.md=src/%-from-markdown.htm
 src/%-from-markdown.html: markdown/%.md
 	python3 markdown2html.py $< $@
 
-test: build_test | test/html test/src
-	@for htmlfile in $(notdir $(html_testfiles)); \
-	do \
-		diff --strip-trailing-cr -Z -s -q test/html/$$htmlfile templates_html/$$htmlfile || exit 1 ; \
-	done
+# Reinitialize the files in the markdown directory using the templates.
+reinit:
+	rm -Rf markdown
+	cp -rp templates/markdown markdown
 
-build_test: $(jinja2_testfiles:test/src/%.jinja2=test/html/%.html)
-	@echo "Test files copied. Please run ~make test~ again (yes I know this is the second time)."
+# Test the source code using the contents of the templates/ directory.
+
+test: $(template_jinja2_files:templates/src/%.jinja2=test/html/%.html)
 
 test/html:
 	mkdir -p $@
 
-test/src:
-	mkdir -p $@
-	cp -f templates/src/*.jinja2 templates/src/bootstrap* templates/src/navbar-fragment.html templates/src/page-footer.html $@
-	@echo "Test directory created. Please run ~make test~ again."
-
-test/html/%.html: test/src/%.jinja2 $(template_files:templates/%.md=test/src/%-from-markdown.html)
+test/html/%.html: templates/src/%.jinja2 | test/html
 	python3 jinja2html.py $< $@
-
-test/src/%-from-markdown.html: templates/%.md
-	python3 markdown2html.py $< $@
+	diff --strip-trailing-cr -Z -q $@ templates/html/$(@F) || exit 1 ; \
 
 clean:
 	rm -Rf test
