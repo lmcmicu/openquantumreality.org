@@ -26,6 +26,7 @@
 <pre></pre>
 
 [jan05]: events_2006_01_05.html
+Here is the day's schedule:
 11:00 Cras viverra metus
 13:00 Adipiscing vitae urna fringilla
 16:00 Invited Lecture: Duns Scotus, *Pleonasm for Everyone*
@@ -40,7 +41,7 @@
 ---
 
 [jan21]: https://thebulletin.org/doomsday-clock/
-8:00 Team-building wilderness hike
+Today is the team-building wilderness hike. We will meet in front of the department at 8AM.
 ---
 
 [jan30]: https://www.asc-csa.gc.ca/eng/
