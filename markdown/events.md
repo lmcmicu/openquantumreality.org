@@ -26,7 +26,7 @@
 <pre></pre>
 
 [jan05]: events_2006_01_05.html
-Here is the day's schedule:
+Summary:
 11:00 Cras viverra metus
 13:00 Adipiscing vitae urna fringilla
 16:00 Invited Lecture: Duns Scotus, *Pleonasm for Everyone*
