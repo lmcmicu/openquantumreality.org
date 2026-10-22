@@ -8,11 +8,11 @@
 >
 > ![A screenshot of a markdown page in GitHub](readme_images/markdown_edit.png)  
 
-## Editing markdown files (either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) or offline):
+## Editing markdown files (either [in GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository) or using your own computer and editor):
 
 1. Edit one or more of the `.md` files in the [`markdown/`](https://github.com/lmcmicu/openquantumreality.org/tree/main/markdown) directory using [markdown syntax](https://daringfireball.net/projects/markdown/syntax).
 
-2. **If you are editing offline**, [commit](https://git-scm.com/docs/git-commit) your changes to a new branch and then [push](https://git-scm.com/docs/git-push) your branch to GitHub. You will then need to [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) to request that your branch be merged to the `main` branch. The pull request will then need to be approved by the web server administrator (see below) before it is actually merged (direct commits to `main` are not permitted).  
+2. **If you are not editing in GitHub**, [commit](https://git-scm.com/docs/git-commit) your changes to a new branch and then [push](https://git-scm.com/docs/git-push) your branch to GitHub. You will then need to [open a pull request](https://docs.github.com/en/pull-requests/how-tos/create-pull-requests/creating-a-pull-request) to request that your branch be merged to the `main` branch. The pull request will then need to be approved by the web server administrator (see below) before it is actually merged (direct commits to `main` are not permitted).  
 **If you are [using GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-your-repository)** you will be guided through all of these steps by a wizard, with links to relevant documentation.
 
 3. If your markdown links to an image or some other web content (a PDF file, audio / video file, etc.), send these by email to the web server administrator. **Avoid adding binary files to this repository.**
